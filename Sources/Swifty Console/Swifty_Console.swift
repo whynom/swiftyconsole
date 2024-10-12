@@ -1,2 +1,13 @@
-// The Swift Programming Language
-// https://docs.swift.org/swift-book
+import SwiftUI
+
+struct ConsoleView: View {
+    var body: some View {
+        Text("Here's the view")
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ConsoleView()
+    }
+}

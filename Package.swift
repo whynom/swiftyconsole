@@ -5,6 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "Swifty Console",
+    platforms: [
+        .macOS(.v10_15), // This line ensures macOS compatibility starting from version 10.15
+         .iOS(.v13), // Uncomment and edit accordingly if your package is for iOS
+         .watchOS(.v6), // Uncomment and edit accordingly if your package is for watchOS
+         .tvOS(.v13) // Uncomment and edit accordingly if your package is for tvOS
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
